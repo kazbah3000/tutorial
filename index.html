@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- We set the base href -->
+    <script>document.write('<base href="' + document.location + '" />');</script>
+   
+    <title>Angular 2 Tutorial</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CSS file -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" >
+   
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!-- IE polyfills, keep the order please -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/es6-shim/0.33.3/es6-shim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.20/system-polyfills.js"></script>
+    
+    <!-- Agular 2 -->
+    <script src="https://code.angularjs.org/2.0.0-beta.7/angular2-polyfills.js"></script>
+    <script src="https://code.angularjs.org/tools/system.js"></script>
+    <script src="https://code.angularjs.org/tools/typescript.js"></script>
+    <script src="https://code.angularjs.org/2.0.0-beta.7/Rx.js"></script>
+    <script src="https://code.angularjs.org/2.0.0-beta.7/angular2.dev.js"></script>
+    
+    <!-- Agular 2 Router -->
+    <script src="https://code.angularjs.org/2.0.0-beta.7/router.dev.js"></script>
+     <!-- Config Agular 2 and Typescript -->
+    <script>
+      System.config({
+        transpiler: 'typescript', 
+        typescriptOptions: { emitDecoratorMetadata: true }, 
+        packages: {'app': {defaultExtension: 'ts'}} 
+      });
+      System.import('app/main')
+            .then(null, console.error.bind(console));
+    </script>
+
+  </head>
+
+  <!-- Run the application -->
+  <body>
+    <h1>Angular 2 Tutorial</h1>
+    <my-app>Loading Sample...</my-app>
+    
+  
+    
+    Angular 2 Tutorial - PDF - Videos - For beginners - javascript - For Advanced Programmers
+  </body>
+
+</html>
+<!-- 
+Copyright 2016 angulartypescript.com. All Rights Reserved.
+Everyone can use this source code; don’t forget to indicate the source please:
+http://www.angulartypescript.com/ 
+-->
